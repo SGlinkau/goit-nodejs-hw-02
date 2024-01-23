@@ -1,29 +1,38 @@
-## GoIT Node.js Course Template Homework
+# Goit-nodejs-rest-api
 
-Wykonaj forka tego repozytorium, aby wykonywać zadania domowe (2-6). Fork utworzy repozytorium na Twoim koncie na http://github.com
+## About
 
-Dodaj mentora jako collaboratora.
+REST API application to work with a collection of contacts.
 
-Dla każdego zadania domowego utwórz nową gałąź (branch).
+## Tech stack
 
-- hw02
-- hw03
-- hw04
-- hw05
-- hw06
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-Każda nowa gałąź dla zadania powinna być tworzona z gałęzi master.
+### Used
 
-Po zakończeniu wykonania zadania domowego na swojej gałęzi, należy zrobić pull request (PR). Następnie dodaj mentora do przeglądu kodu. Dopiero po zatwierdzeniu PR przez mentora możesz scalić gałąź z zadaniem domowym do gałęzi master.
+([Postman](https://www.postman.com/)) to work with REST API <br>
+([Joi](https://joi.dev/)) package for validation <br>
+([MongoDB](https://www.mongodb.com/atlas/database)) clouds database service <br>
+([Mongoose](https://mongoosejs.com/)) created database model to application data
 
-Uważnie czytaj komentarze mentora. Popraw uwagi i zrób commit na gałęzi z zadaniem domowym. Zmiany automatycznie pojawią się w PR po wysłaniu commitu z poprawkami na GitHub. Po poprawkach ponownie dodaj mentora do przeglądu kodu.
+## Setup
 
-- Podczas oddawania zadania domowego podaj link do PR.
-- Kod JS jest czytelny i zrozumiały, do formatowania używany jest Prettier.
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
 
-### Komendy:
+## Usage
 
-- `npm start` &mdash; uruchamia serwer w trybie produkcyjnym
-- `npm run start:dev` &mdash; uruchamia serwer w trybie deweloperskim (development)
-- `npm run lint` &mdash; uruchamia sprawdzanie kodu z ESLint, należy wykonać przed każdym PR i poprawić wszystkie błędy lintera
-- `npm lint:fix` &mdash; to samo co powyższe, ale również automatycznie poprawia proste błędy.
+After you clone this repo to your desktop, go to its root directory and run `npm install` to install
+its dependencies.
+
+Once the dependencies are installed, you can run `npm run start:dev`
+
+Open your browser or postman and check all available methods and endpoint's
+
+- GET (contacts) : `http://localhost:3000/api/contacts`
+- GET (find contact by id) : `http://localhost:3000/api/contacts/CONTACT_ID*`
+- POST (add new contact with json) : `http://localhost:3000/api/contacts/`
+- PUT (update contact with json) : `http://localhost:3000/api/contacts/CONTACT_ID*`
+- DELETE (remove contact with unique id) : `http://localhost:3000/api/contacts/CONTACT_ID*`
+
+\* - replace CONTACT_ID with ID of contact that you want to work with (you can check them with GET method)
