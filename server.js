@@ -15,7 +15,7 @@ connection
   .then(() => {
     app.listen(PORT, function () {
       console.log(
-        `Server running. Access API here ► http://localhost:${PORT}/ \n Find methods in readme file available on my GitHub here ► https://github.com/SGlinkau/goit-nodejs-hw-02`
+        `Server running. Access API here ► http://localhost:${PORT}/ \nFind methods in readme file available on my GitHub here ► https://github.com/SGlinkau/goit-nodejs-hw-02`
       );
     });
     console.log("Database connection successful");
